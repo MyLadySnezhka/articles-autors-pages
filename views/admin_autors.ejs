@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./parts/head'); %>
+    <title>Довідник (адмінка)</title>
+</head>
+<body>
+    <div class="wrap">
+        <%- include('./parts/header'); %>
+        <h2>Додавання авторів</h2>
+        <div class="content">
+            <div class="autorsAdd">
+                <form name="addAutors" method="POST">
+                    <input type="text" name="autorSurname" placeholder="Прізвище автора">
+                    <input type="text" name="autorName" placeholder="Ім'я автора">
+                    <button type="submit" name="btnAdd">Додати</button>
+                </form>
+            </div>
+            <div class="autorsList">
+                <b>Список авторів:</b><br/>
+                <ul class="autorsListul">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/js/admaut.js"></script>
+</body>
+</html>
